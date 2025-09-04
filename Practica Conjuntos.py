@@ -2,9 +2,6 @@ A = {'azul', 'amarillo', 'naranja', 'blanco', 'amarillo'}
 B = {'rosa', 'rojo', 'azul'}
 
 
-
-
-
 print('---'*20)
 #1
 
