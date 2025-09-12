@@ -33,3 +33,23 @@ try:
     print(diccionario["precio"])
 except KeyError:
     print('Ha ocurrido un error. La clave informada no existe en el diccionario.')
+
+'''4. Escribe un programa que intente abrir un archivo que no existe. Si se produce una excepción
+FileNotFoundError, captura la excepción y muestra un mensaje de error al usuario. Sin
+embargo, también intenta crear el archivo si no existe.'''
+
+nombre_archivo = 'datos.txt'
+
+try:
+    with open(nombre_archivo, 'r') as archivo:
+        contenido = archivo.read()
+        print('Contenido del archivo: ')
+        print(contenido)
+except FileNotFoundError:
+    print(f'Error: El archivo informado no existe.')
+    print('Vamos a crear el archivo...')
+
+    with open(nombre_archivo, 'w') as archivo:
+        archivo.write('Este es un archivo recién creado.\n')
+
+    print(f"El archivo '{nombre_archivo}' ha sido creado.")
