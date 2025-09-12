@@ -2,8 +2,8 @@
 captura la excepción ZeroDivisionError y muestra un mensaje de error al usuario.'''
 
 try:
-    num1 = int(input('Informe el numerador: '))
-    num2 = int(input('Informe el denominador: '))
+    num1 = int(input('Informe el dividendo: '))
+    num2 = int(input('Informe el divisor: '))
 
     resultado = num1/num2
     print(f'El resultado de la división es {resultado:.2f}.')
@@ -38,7 +38,11 @@ except KeyError:
 FileNotFoundError, captura la excepción y muestra un mensaje de error al usuario. Sin
 embargo, también intenta crear el archivo si no existe.'''
 
-nombre_archivo = 'datos.txt'
+'''4. Escribe un programa que intente abrir un archivo que no existe. Si se produce una excepción
+FileNotFoundError, captura la excepción y muestra un mensaje de error al usuario. Sin
+embargo, también intenta crear el archivo si no existe.'''
+
+nombre_archivo = 'mielll.txt'
 
 try:
     with open(nombre_archivo, 'r') as archivo:
@@ -53,3 +57,19 @@ except FileNotFoundError:
         archivo.write('Este es un archivo recién creado.\n')
 
     print(f"El archivo '{nombre_archivo}' ha sido creado.")
+
+'''5. Escribe un programa que intente dividir dos números. Si el segundo número es cero,
+captura la excepción ZeroDivisionError. Si el primer número es un número no válido,
+captura la excepción ValueError. En cualquier caso, muestra un mensaje de error al usuario.'''
+
+
+try:
+    numero1 = int(input('Informe el dividendo: '))
+    numero2 = int(input('Informe el divisor: '))
+
+    resultado = numero1/numero2
+    print(f'El resultado de la división es {resultado:.2f}.')
+except ValueError:
+    print(f'Ha ocurrido un error. El valor informado no es valido.')
+except ZeroDivisionError:
+    print('Ha ocurrido un error. No se puede dividir por zero.')
