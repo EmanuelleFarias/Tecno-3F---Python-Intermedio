@@ -22,3 +22,14 @@ try:
     print(f'El resultado de la soma es {resultado}.')
 except TypeError:
     print('Ha ocurrido un error. No se puede sumar un numero y una cadena.')
+
+'''3. Escribe un programa que intente acceder a una clave que no existe en un
+diccionario. Si se produce una excepción KeyError, captura la excepción y muestra
+un mensaje de error al usuario.'''
+
+diccionario = {"item": "cuaderno", "cantidad": 20}
+
+try:
+    print(diccionario["precio"])
+except KeyError:
+    print('Ha ocurrido un error. La clave informada no existe en el diccionario.')
