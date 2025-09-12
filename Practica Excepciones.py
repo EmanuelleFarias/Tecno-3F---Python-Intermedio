@@ -16,7 +16,7 @@ de tipo, captura la excepción TypeError y muestra un mensaje de error al usuari
 
 try:
     num = 10
-    texto = 10
+    texto = 'casa'
 
     resultado = num + texto
     print(f'El resultado de la soma es {resultado}.')
