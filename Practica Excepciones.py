@@ -34,9 +34,6 @@ try:
 except KeyError:
     print('Ha ocurrido un error. La clave informada no existe en el diccionario.')
 
-'''4. Escribe un programa que intente abrir un archivo que no existe. Si se produce una excepción
-FileNotFoundError, captura la excepción y muestra un mensaje de error al usuario. Sin
-embargo, también intenta crear el archivo si no existe.'''
 
 '''4. Escribe un programa que intente abrir un archivo que no existe. Si se produce una excepción
 FileNotFoundError, captura la excepción y muestra un mensaje de error al usuario. Sin
