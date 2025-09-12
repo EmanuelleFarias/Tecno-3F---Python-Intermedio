@@ -9,3 +9,16 @@ try:
     print(f'El resultado de la división es {resultado:.2f}.')
 except ZeroDivisionError:
     print('Ha ocurrido un error. No se puede dividir por zero.')
+
+
+'''2. Escribe un programa que intente sumar un número y una cadena. Si se produce un error
+de tipo, captura la excepción TypeError y muestra un mensaje de error al usuario.'''
+
+try:
+    num = 10
+    texto = 10
+
+    resultado = num + texto
+    print(f'El resultado de la soma es {resultado}.')
+except TypeError:
+    print('Ha ocurrido un error. No se puede sumar un numero y una cadena.')
